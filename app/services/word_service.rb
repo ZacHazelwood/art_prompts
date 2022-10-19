@@ -3,7 +3,7 @@ class WordService
         Faraday.new(url: "https://random-word-api.herokuapp.com/")
     end   
 
-    def self.get_random_word(length)
+    def self.get_random_word_at_length(length)
         response = conn.get("word") do |f|
             f.params['length'] = length
         end
