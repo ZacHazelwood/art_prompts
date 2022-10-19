@@ -8,5 +8,10 @@ class WordService
             f.params['length'] = length
         end
         JSON.parse(response.body, symbolize_names: true)
-    end   
+    end
+    
+    def self.get_random_word
+        response = conn.get("word")
+        JSON.parse(response.body, symbolize_names: true)
+    end    
 end   

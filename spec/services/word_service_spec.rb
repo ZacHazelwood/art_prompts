@@ -13,5 +13,12 @@ RSpec.describe WordService do
         expect(response).to be_a Array
         expect(response[0]).to be_a String
         expect(response[0].length).to eq 5
+    end
+    
+    it "gets a word", :vcr do
+        response = WordService.get_random_word
+
+        expect(response).to be_a Array
+        expect(response[0]).to be_a String
     end    
 end
