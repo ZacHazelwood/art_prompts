@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://random-word-api.herokuapp.com/word
+    uri: https://random-word-api.herokuapp.com/word?length=5
     body:
       encoding: US-ASCII
       string: ''
@@ -27,11 +27,11 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 19 Oct 2022 21:44:48 GMT
+      - Wed, 19 Oct 2022 21:44:47 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '["bordel"]'
-  recorded_at: Wed, 19 Oct 2022 21:44:48 GMT
+      string: '["yelps"]'
+  recorded_at: Wed, 19 Oct 2022 21:44:47 GMT
 recorded_with: VCR 6.1.0
